@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفريق</title>
+    <link rel="icon" href="images/logo.png">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- JavaScript -->
+    <script src="js/smooth-scroll.js"></script>
+    <style>
+        /* navbar */
+    .navbar {
+        background:#415678;
+        transition: .5s ease-out;
+        padding: 15px 0;
+    }
+    
+    .navbar .navbar-brand h1 {
+        font-size: 26px;
+        color: #020312;
+    }
+    
+    .navbar .navbar-brand img {
+        width: 55px;
+        margin-right: 10px;
+    }
+    
+    .navbar .navbar-nav li {
+        padding: 0 10px;
+    }
+    .navbar .navbar-nav li:hover {
+        padding: 0 10px;
+        background-color: #f8f8fc;
+    }
+    .navbar .navbar-nav li .nav-link {
+        font-size: 15px;
+        font-weight: 500;
+        color: aliceblue;
+        transition: all .3s ease;
+    }
+    
+    .navbar .navbar-nav li:hover .nav-link {
+        color: #415678;
+    }
+    
+    .navbar .navbar-toggler {
+        border-radius: 0;
+        border: 0;
+    }
+    
+    .navbar .navbar-toggler i {
+        font-size: 28px;
+    }
+    
+    .navbar .navbar-toggler:focus {
+        outline: 0;
+    }
+    
+    .navbar.navbar-fixed {
+        background: #fff;
+        transition: .5s ease-out;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0);
+    }
+    
+       /* services */
+    p{
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+    
+    h4 {
+        font-size: 24px;
+    }
+    
+    h5 {
+        font-size: 20px;
+    }
+    .services .content {
+        text-align: center;
+        padding: 15px;
+        background: #f8f8fc;
+        border-radius: 15px;
+        transition: all .3s ease;
+    }
+    
+    .services .content:hover {
+        background: #415678;
+        transition: all .3s ease;
+    }
+    
+    .services .content:hover i {
+        color: #fff;
+    }
+    
+    .services .content:hover h5 {
+        color: #fff;
+    }
+    
+    .services .content:hover p {
+        color: #fff;
+    }
+    
+    .services .content .serv-icon {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .services .content i {
+        font-size: 60px;
+        color: #415678;
+    }
+    
+    .services .content .clone-icon i {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        right: 0;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+    
+    .services .content h5 {
+        margin-bottom: 10px;
+    }
+    
+    .services .content:hover .clone-icon i {
+        position: absolute;
+        top: 7px;
+        left: -12px;
+        right: 0;
+        opacity: 0.2;
+    }
+    .section {
+        padding: 90px 0;
+    }
+    
+    .section-bottom-only {
+        padding-bottom: 90px;
+    }
+    
+    .section-title {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    .section-title .title-top {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: #415678;
+        letter-spacing: 4px;
+        font-size: 18px;
+    }
+    
+    .section-title h3 {
+        font-size: 36px;
+        font-weight: 800;
+    }
+    
+    .section-title.section-title-left {
+        text-align: left;
+    }
+    
+    .section-title .title-desc {
+        margin-top: 15px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 110%;
+        margin: 0;
+        font-family: 'Heebo', sans-serif;
+        font-weight: 500;
+        color: #020312;
+    }
+    
+    
+    @media (max-width:767px) {
+        .navbar .navbar-nav {
+            background:#415678;
+            box-shadow: 0 12px 30px -15px rgba(0, 0, 0, 0.2);
+            border-radius: 0 0 15px 15px;
+            border-top: 0;
+            outline: none;
+            padding: 14px 10px;
+            color: #f8f8fc;
+        }
+    
+        .navbar .navbar-brand {
+            margin-left: 15px;
+        }
+    
+        .home-intro .content-image img {
+            margin-top: 45px;
+            float: none;
+        }
+    
+        .process-work .col-sm-6 .content {
+            margin-bottom: 30px;
+        }
+    
+        .process-work .col-sm-6:nth-last-child(-n+2) .content {
+            margin-bottom: 0;
+        }
+    
+        .services .row:first-child {
+            margin-bottom: 0;
+        }
+    
+        .services .row:last-child .col-sm-12:last-child .content {
+            margin-bottom: 0;
+        }
+    
+        .services .content {
+            margin-bottom: 30px;
+        }
+    
+        .news .content {
+            margin-bottom: 30px;
+        }
+    
+        .news .col-sm-12 .row .col-sm-12:nth-last-child(1) .content {
+            margin-bottom: 0;
+        }
+    
+        .words-section .content .button-wrap {
+            margin-top: 30px;
+            text-align: center;
+        }
+    
+        .contact form {
+            margin-top: 40px;
+        }
+    
+        footer {
+            text-align: center;
+        }
+    
+        footer .col-sm-6 .content {
+            margin-bottom: 30px;
+        }
+    
+        footer .col-sm-6:nth-last-child(-1n+2) .content {
+            margin-bottom: 0;
+        }
+    
+    }
+    </style>
+</head>
+<body>
+ 
+    	<!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" style="color: #fff;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link" >التواصل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="teams.html"  class="nav-link">الاعضاء</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="videos.html" class="nav-link">الإصابات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">محتويات الصندوق </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">الصفحة الرئيسية</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+    
+        <!-------Social Icons---->
+        <section>
+            <div class="social-icons">
+               <ul>
+                  <a href="https://twitter.com/Proxaid_om"><li><i class="fa fa-twitter"></i></li></a>
+                  <a href="mailto:Proxaid.company@gmail.com"><li><i class="fa fa-envelope"></i></li></a>
+                  <a href="https://www.instagram.com/proxaid__om/?igshid=ne7osngev780"><li><i class="fa fa-instagram"></i></li></a>
+                  <a href="https://www.youtube.com/channel/UCf96w7Jsq_EttlEYN7OLQQw/featured"><li><i class="fa fa-youtube-play"></i></li></a>
+               </ul>
+           </div>
+       </section>   
+       <!-------end Social Icons---->
+
+       	<!-- services -->
+	<div id="services" class="services section-bottom-only" style="margin-top: 100px;">
+		<div class="section-title">
+			<h5 class="title-top">تعرف على فريق الشركة</h5>
+			<h3>تواصل مع الجميع</h3>
+		</div>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-4 col-sm-12">
+					<div class="content">
+						<div class="serv-icon">
+                            <a href="mailto:s131627@student.squ.edu.om" style="text-decoration: none; text-align: right; color: rgb(56, 54, 54);">
+							<i class="fa fa-envelope"></i>
+							<span class="clone-icon"><i class="fa fa-envelope"></i></span>
+                        </a>
+						</div>
+						<p> أنفال السيابية : الرئيس التنفيذي</p>
+					</div>
+				</div>
+
+                <div class="col-md-4 col-sm-12">
+					<div class="content">
+						<div class="serv-icon">
+                            <a href="mailto:s126279@student.squ.edu.om" style="text-decoration: none; text-align: right; color: rgb(56, 54, 54);">
+							<i class="fa fa-envelope"></i>
+							<span class="clone-icon"><i class="fa fa-envelope"></i></span>
+                        </a>
+						</div>
+						<p> شذى الرشيدية: المدير التنفيذي المالي</p>
+					</div>
+				</div>
+                <div class="col-md-4 col-sm-12">
+					<div class="content">
+						<div class="serv-icon">
+                            <a href="mailto:s123432@student.squ.edu.om" style="text-decoration: none; text-align: right; color: rgb(56, 54, 54);">
+							<i class="fa fa-envelope"></i>
+							<span class="clone-icon"><i class="fa fa-envelope"></i></span>
+                        </a>
+						</div>
+						<p> ريان الكندية: مدير الموارد البشرية</p>
+					</div>
+				</div>
+
+                <div class="col-md-4 col-sm-12">
+					<div class="content">
+						<div class="serv-icon">
+                            <a  href="mailto:s124263@student.squ.edu.om" style="text-decoration: none; text-align: right; color: rgb(56, 54, 54);">
+							<i class="fa fa-envelope"></i>
+							<span class="clone-icon"><i class="fa fa-envelope"></i></span>
+                        </a>
+						</div>
+						<p> 
+                            أنفال الشيكلي : مدير التسويق</p>
+					</div>
+				</div>
+                <div class="col-md-4 col-sm-12">
+					<div class="content">
+						<div class="serv-icon">
+                            <a  href="mailto:s122527@student.squ.edu.om"  style="text-decoration: none; text-align: right; color: rgb(56, 54, 54);">
+							<i class="fa fa-envelope"></i>
+							<span class="clone-icon"><i class="fa fa-envelope"></i></span>
+                        </a>
+						</div>
+						<p> 
+                            فاطمة المقيمية: مدير تطوير المنتج والتصنيع</p>
+					</div>
+				</div>
+                <div class="col-md-4 col-sm-12">
+					<div class="content">
+						<div class="serv-icon">
+                            <a  href="mailto:s121771@student.squ.edu.om"  style="text-decoration: none; text-align: right; color: rgb(56, 54, 54);">
+							<i class="fa fa-envelope"></i>
+							<span class="clone-icon"><i class="fa fa-envelope"></i></span>
+                        </a>
+						</div>
+						<p> 
+                            رقية الخاطرية: مدير قسم المبيعات</p>
+					</div>
+				</div>
+                <div class="col-md-4 col-sm-12">
+					<div class="content">
+						<div class="serv-icon">
+                            <a   href="mailto:s122199@student.squ.edu.om" style="text-decoration: none; text-align: right; color: rgb(56, 54, 54);">
+							<i class="fa fa-envelope"></i>
+							<span class="clone-icon"><i class="fa fa-envelope"></i></span>
+                        </a>
+						</div>
+						<p> 
+                            سارة المقيمية : عضو في قسم المالية</p>
+					</div>
+				</div>
+                <div class="col-md-4 col-sm-12">
+					<div class="content">
+						<div class="serv-icon">
+                            <a  href="mailto:s119015@student.squ.edu.om" style="text-decoration: none; text-align: right; color: rgb(56, 54, 54);">
+							<i class="fa fa-envelope"></i>
+							<span class="clone-icon"><i class="fa fa-envelope"></i></span>
+                        </a>
+						</div>
+						<p>فاطمة الجابرية: عضو في  قسم الموارد</p>
+					</div>
+				</div>
+
+                <div class="col-md-4 col-sm-12">
+					<div class="content">
+						<div class="serv-icon">
+                            <a href="mailto:s120730@student.squ.edu.om" style="text-decoration: none; text-align: right; color: rgb(56, 54, 54);">
+							<i class="fa fa-envelope"></i>
+							<span class="clone-icon"><i class="fa fa-envelope"></i></span>
+                        </a>
+						</div>
+						<p>مودة السليمانية: عضو في قسم الموارد </p>
+					</div>
+				</div>
+                <div class="col-md-4 col-sm-12">
+					<div class="content">
+						<div class="serv-icon">
+                            <a  href="mailto:s123990@student.squ.edu.om" style="text-decoration: none; text-align: right; color: rgb(56, 54, 54);">
+							<i class="fa fa-envelope"></i>
+							<span class="clone-icon"><i class="fa fa-envelope"></i></span>
+                        </a>
+						</div>
+						<p>عبير الكلبانية: عضو في قسم التسويق</p>
+					</div>
+				</div>
+                <div class="col-md-4 col-sm-12">
+					<div class="content">
+						<div class="serv-icon">
+                            <a  href="mailto:s120730@student.squ.edu.om" style="text-decoration: none; text-align: right; color: rgb(56, 54, 54);">
+							<i class="fa fa-envelope"></i>
+							<span class="clone-icon"><i class="fa fa-envelope"></i></span>
+                        </a>
+						</div>
+						<p>ماريا اليحيائية : عضو في قسم التسويق</p>
+					</div>
+				</div>
+                <div class="col-md-4 col-sm-12">
+					<div class="content">
+						<div class="serv-icon">
+                            <a   href="mailto:s122199@student.squ.edu.om" style="text-decoration: none; text-align: right; color: rgb(56, 54, 54);">
+							<i class="fa fa-envelope"></i>
+							<span class="clone-icon"><i class="fa fa-envelope"></i></span>
+                        </a>
+						</div>
+						<p>قبس المعمرية: عضو في قسم التصنيع</p>
+					</div>
+				</div>
+                <div class="col-md-4 col-sm-12">
+					<div class="content">
+						<div class="serv-icon">
+                            <a  href="mailto:s127187@student.squ.edu.om" style="text-decoration: none; text-align: right; color: rgb(56, 54, 54);">
+							<i class="fa fa-envelope"></i>
+							<span class="clone-icon"><i class="fa fa-envelope"></i></span>
+                        </a>
+						</div>
+						<p>ريان الشريقية: عضو في قسم المبيعات</p>
+					</div>
+				</div>
+
+	</div>
+	<!-- end services -->
+
+         <!-- script -->
+  <script src="js/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.filterizr.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <!-- <script src="js/magnific-popup.min.js"></script> -->
+  <!-- <script src="js/contact-form.js"></script> -->
+  <script src="js/main.js"></script>
+  <script>     
+       $('.carousel').carousel({
+             interval : 8000
+           })
+
+         var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+  </body>
+  </html>
+  
